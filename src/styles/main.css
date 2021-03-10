@@ -1,33 +1,57 @@
+@font-face {
+  font-family: "VKSans";
+  src: url("../VKSans.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "VKSans";
+}
+
 .parallaxParent {
   height: 100vh;
+  position: relative;
   overflow: hidden;
 }
 
-.parallaxParent > * {
+.parallaxParent > .paralax-background {
   height: 200%;
   position: relative;
   top: -100%;
 }
 
-#parallax1 > div {
+.section-wrapper {
+  color: brown;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#parallax1 > .paralax-background {
   background: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-and-clouds-shape_24972-1095.jpg?size=626&ext=jpg")
     no-repeat;
   background-size: cover;
 }
 
-#parallax2 > div {
+#parallax2 > .paralax-background {
   background: url("https://media.istockphoto.com/vectors/black-background-vector-id1167050865?k=6&m=1167050865&s=612x612&w=0&h=I-wf_Vv-MzqTfcYd8AxZKKvXGM3yC6DNNAEOHswvaMY=")
     no-repeat;
   background-size: cover;
 }
 
-#parallax3 > div {
+#parallax3 > .paralax-background {
   background: url("https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHw%3D&w=1000&q=80")
     no-repeat;
   background-size: cover;
 }
 
-#parallax4 > div {
+#parallax4 > .paralax-background {
   background: url("https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Colorful-Geometric-Simple-Background-Image.jpg")
     no-repeat;
   background-size: cover;

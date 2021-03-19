@@ -30,12 +30,20 @@ body {
   background: url("../../../img/bg2.png");
 }
 
-#parallax3 > .paralax-background {
-  background: url("../../../img/bg3.png");
-}
-
 #parallax4 > .paralax-background {
   background: url("../../../img/bg1.png");
+}
+
+#parallax5 > .paralax-background {
+  background: #fff;
+}
+
+#parallax6 > .paralax-background {
+  background: url("https://webfon.top/wp-content/uploads/2017/10/tools.png");
+}
+
+#parallax7 > .paralax-background {
+  background: url("../../../img/bg3.png");
 }
 
 .parallaxParent {
@@ -59,14 +67,40 @@ body {
   transform: none !important;
   z-index: 1;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+
+  .messages {
+    display: flex;
+    flex-direction: column;
+    width: 570px;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 950px;
+    color: #61b4df;
+    font-size: 5.5rem;
+    font-family: "Lobster", cursive;
+
+    & > span {
+      text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px;
+      // text-shadow: 2px 2px #533d4a;
+      text-shadow: 0 0 2px black;
+      span {
+        position: relative;
+      }
+    }
+  }
 }
 
 .message-wrapper {
   width: 100%;
   height: fit-content;
   display: flex;
-  padding: 0 20%;
 
   .message {
     background: #2c2d2f;
@@ -78,7 +112,7 @@ body {
     width: fit-content;
     height: fit-content;
     transform: translateX(-300%);
-    max-width: 300px;
+    max-width: 370px;
 
     & > span {
       display: block;
@@ -91,7 +125,17 @@ body {
   }
 
   & + & {
-    margin-top: 17px;
+    margin-top: 5px;
+  }
+
+  &.end .message {
+    background: linear-gradient(180deg, rgba(44, 45, 47, 1) 0%, rgba(255, 255, 255, 0) 50%);
+    min-width: 200px;
+    min-height: 80px;
+  }
+
+  &.right.end .message {
+    background: linear-gradient(180deg, rgba(69, 70, 72, 1) 0%, rgba(255, 255, 255, 0) 50%);
   }
 
   &.right {

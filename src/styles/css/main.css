@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @font-face {
   font-family: "VKSans";
@@ -55,6 +56,93 @@ body {
 
 #parallax11 > .paralax-background {
   background: url("../../../img/bg1.png"); }
+
+#parallax13 > .paralax-background {
+  background: url("https://preview.pixlr.com/images/800wm/1337/1/1337102702.jpg"); }
+
+#parallax14 .paralax-background {
+  background: #ffedff; }
+#parallax14 .description {
+  color: #d596e4; }
+
+#parallax15 > .paralax-background {
+  background: url("https://mobileimages.lowes.com/product/converted/100271/1002716504.jpg?size=xl"); }
+
+#parallax16 .paralax-background {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/email-pattern.png"); }
+
+#parallax17 .paralax-background {
+  background: #e5fff3; }
+#parallax17 .description {
+  color: #66da85; }
+
+#parallax18 .paralax-background {
+  background: url("https://profitex.com.by/wp-content/uploads/2017/08/food-1.png"); }
+
+#parallax19 .paralax-background {
+  background: #fdffee; }
+#parallax19 .description {
+  color: #c6c77c; }
+
+#parallax20 .paralax-background {
+  background: url("https://invacorp.ru/wp-content/uploads/2019/06/food-pattern-free-img.png");
+  opacity: 0.3; }
+
+#parallax21 .paralax-background {
+  background: url("https://png.pngtree.com/png-vector/20191017/ourlarge/pngtree-healthy-food-seamless-pattern-vector-png-image_1806216.jpg");
+  opacity: 0.15; }
+
+#parallax22 .description {
+  color: #7ca1da; }
+
+#parallax23 .paralax-background {
+  background: url("https://image.freepik.com/free-vector/minimal-triangle-pattern-design-pastel-colors_1017-14885.jpg");
+  opacity: 0.4; }
+
+#parallax24 .paralax-background {
+  background: #fff3f3; }
+#parallax24 .description {
+  color: #da7c7c; }
+
+#parallax25 .paralax-background {
+  background: #fff3f3; }
+#parallax25 .description {
+  color: #da7c7c; }
+
+#parallax26 .paralax-background {
+  background: url("https://i.pinimg.com/originals/25/d8/be/25d8be9….png");
+  opacity: 0.5; }
+
+#parallax27 .paralax-background {
+  background: #eafbff; }
+#parallax27 .description {
+  color: #7e7cda; }
+
+#parallax28 .paralax-background {
+  background: #eafbff; }
+#parallax28 .description {
+  color: #7e7cda; }
+
+#parallax29 .paralax-background {
+  background: url("../../../img/bg2.png"); }
+
+#parallax30 .paralax-background {
+  background: #ece5da; }
+#parallax30 .title {
+  margin-top: -40px;
+  font-size: 80px;
+  margin-left: -110px; }
+#parallax30 .title + .title {
+  margin-top: 60px; }
+
+#parallax31 .paralax-background {
+  background: #ece5da; }
+
+#parallax32 .paralax-background {
+  background: #ece5da; }
+
+#parallax33 .paralax-background {
+  background: #ece5da; }
 
 .description {
   color: #e57843; }
@@ -146,7 +234,8 @@ body {
   position: fixed;
   top: 50%;
   right: 7px;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  height: 100vh; }
   .nav-container > div {
     background: #df7861;
     width: 45px;
@@ -167,6 +256,9 @@ body {
     .nav-container > div:hover i {
       text-shadow: none; }
   .nav-container #button-down {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
     padding-bottom: 12px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
@@ -174,6 +266,9 @@ body {
     margin-bottom: 10px;
     padding-top: 12px;
     border-top-left-radius: 15px;
+    position: absolute;
+    top: 5px;
+    right: 0;
     border-top-right-radius: 15px; }
 
 #parallax1 h1 {
@@ -190,14 +285,15 @@ body {
   letter-spacing: 5px;
   width: 100%;
   font-family: "Lobster", cursive; }
-#parallax1 .title {
+
+.title {
   transform: translateX(-50%) rotate(-10deg);
   display: flex;
   float: left;
   left: 50%;
   position: relative;
   justify-content: center; }
-  #parallax1 .title span {
+  .title span {
     transform: skew(-10deg);
     display: block;
     float: left;
@@ -206,11 +302,12 @@ body {
     min-height: 10px;
     position: relative;
     margin-top: 50px; }
-#parallax1 .title:nth-child(1) {
+
+.title:nth-child(1) {
   color: #e55643; }
-#parallax1 .title:nth-child(2) {
+.title:nth-child(2) {
   color: #2b9f5e; }
-#parallax1 .title:nth-child(4) {
+.title:nth-child(4) {
   color: #f1c83c; }
 
 #parallax2 .section-wrapper {
@@ -258,5 +355,80 @@ body {
       right: 0;
       transition: all 0.3s ease-in 4s;
       box-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px, #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px; }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 8px; }
+
+  #parallax1 h1 {
+    font-size: 6rem; }
+
+  .title span {
+    margin-top: 0; }
+
+  #parallax2 .section-wrapper .intro {
+    padding-left: 20px; }
+
+  #parallax2 .section-wrapper .intro::before {
+    left: 0; }
+
+  .section-wrapper .description {
+    font-size: 4rem; }
+
+  .message-wrapper .message {
+    padding: 10px 15px; }
+
+  #parallax30 .title {
+    font-size: 55px;
+    margin-left: -75px; } }
+@media (max-width: 400px) {
+  #parallax1 h1 {
+    font-size: 5rem; }
+
+  .message-wrapper .message {
+    max-width: 300px; }
+
+  #parallax14 .description,
+  #parallax25 .description {
+    font-size: 3.5rem; }
+
+  #parallax20 .messages {
+    padding-top: 20px; }
+
+  #parallax21 .messages {
+    padding-top: 30px; }
+
+  #parallax30 .title + .title {
+    font-size: 4.5rem; }
+
+  #parallax30 .title {
+    margin-top: 0; } }
+@media (max-width: 380px) {
+  #parallax17 .description {
+    font-size: 3.5rem; }
+
+  #parallax20 .messages {
+    padding-top: 50px; }
+
+  #parallax21 .messages {
+    padding-top: 86px; }
+
+  #parallax22 .description {
+    font-size: 3.5rem; }
+
+  #parallax27 .description {
+    font-size: 3.5rem; }
+
+  #parallax28 .description {
+    font-size: 3.5rem; } }
+@media (max-width: 380px) {
+  html {
+    font-size: 7px; }
+
+  #parallax1 h1 {
+    font-size: 4.7rem; }
+
+  #parallax2 .section-wrapper .intro > span {
+    font-size: 5rem; } }
 
 /*# sourceMappingURL=main.css.map */

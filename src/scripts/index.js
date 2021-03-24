@@ -261,28 +261,28 @@ function introAnimation() {
   );
 }
 
-// function messageTextAnimation(id) {
-//   return new Promise((resolve) => {
-//     const timeForLetter = 0.025;
-//     const message = new TimelineMax();
-//     const totalTime = document.querySelectorAll(`${id} span span`).length * timeForLetter;
-//     document.querySelector(id).classList.add("visible");
-//     message.staggerFromTo(`${id} span span`, 0.1, { opacity: 0 }, { opacity: 1 }, timeForLetter);
-//     if (!document.querySelector(id).parentNode.classList.contains("end"))
-//       setTimeout(() => {
-//         resolve(totalTime);
-//       }, totalTime * 950);
-//   });
-// }
-
 function messageTextAnimation(id) {
   return new Promise((resolve) => {
+    const timeForLetter = 0.025;
     const message = new TimelineMax();
+    const totalTime = document.querySelectorAll(`${id} span span`).length * timeForLetter;
     document.querySelector(id).classList.add("visible");
-    message.staggerFromTo(`${id} span span`, 0.1, { opacity: 0 }, { opacity: 1 }, 0);
-    resolve();
+    message.staggerFromTo(`${id} span span`, 0.1, { opacity: 0 }, { opacity: 1 }, timeForLetter);
+    if (!document.querySelector(id).parentNode.classList.contains("end"))
+      setTimeout(() => {
+        resolve(totalTime);
+      }, totalTime * 950);
   });
 }
+
+// function messageTextAnimation(id) {
+//   return new Promise((resolve) => {
+//     const message = new TimelineMax();
+//     document.querySelector(id).classList.add("visible");
+//     message.staggerFromTo(`${id} span span`, 0.1, { opacity: 0 }, { opacity: 1 }, 0);
+//     resolve();
+//   });
+// }
 
 function descriptionAnimation(id, letterSpeed = null) {
   const description = new TimelineMax();
@@ -291,7 +291,6 @@ function descriptionAnimation(id, letterSpeed = null) {
     0.5,
     { ease: Back.easeOut.config(0.8), opacity: 0, left: -80 },
     { ease: Back.easeOut.config(0.8), opacity: 1, left: 0 },
-    // letterSpeed || 0.05
-    0
+    letterSpeed || 0.05
   );
 }

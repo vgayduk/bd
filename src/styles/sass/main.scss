@@ -579,6 +579,10 @@ body {
     font-size: 55px;
     margin-left: -75px;
   }
+
+  #parallax28 .description {
+    font-size: 3.7rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -591,7 +595,8 @@ body {
   }
 
   #parallax14 .description,
-  #parallax25 .description {
+  #parallax25 .description,
+  #parallax28 .description {
     font-size: 3.5rem;
   }
 
@@ -634,11 +639,11 @@ body {
   }
 
   #parallax28 .description {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
   html {
     font-size: 7px;
   }

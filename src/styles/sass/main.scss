@@ -27,23 +27,77 @@ body {
 }
 
 #parallax2 > .paralax-background {
-  background: url("../../../img/bg2.png");
+  background: #daebec;
 }
 
-#parallax4 > .paralax-background {
-  background: url("../../../img/bg1.png");
+#parallax3 {
+  .paralax-background {
+    background: #fff;
+  }
+
+  .description {
+    color: #78c79a;
+  }
 }
 
-#parallax5 > .paralax-background {
-  background: #fff;
+#parallax4 {
+  .paralax-background {
+    background: #fff9f0;
+  }
+
+  .description {
+    color: #4ca7b3;
+  }
 }
 
-#parallax6 > .paralax-background {
-  background: url("https://webfon.top/wp-content/uploads/2017/10/tools.png");
+#parallax5 {
+  .paralax-background {
+    background: url("../../../img/bg1.png");
+  }
+
+  .description {
+    color: #e57843;
+  }
+}
+
+#parallax6 {
+  .paralax-background {
+    background: #f8fff0;
+  }
+
+  .description {
+    color: #c580d6;
+  }
 }
 
 #parallax7 > .paralax-background {
   background: url("../../../img/bg3.png");
+}
+
+#parallax9 {
+  .paralax-background {
+    background: #fff0fe;
+  }
+
+  .description {
+    color: #d68880;
+  }
+}
+
+#parallax10 > .paralax-background {
+  background: url("../../../img/bg2.png");
+}
+
+#parallax11 > .paralax-background {
+  background: url("../../../img/bg1.png");
+}
+
+.description {
+  color: #e57843;
+
+  span {
+    text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px !important;
+  }
 }
 
 .parallaxParent {
